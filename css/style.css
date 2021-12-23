@@ -34,7 +34,7 @@ body {
 
 /* Header */
 .header-logo {
-  padding: 15px;
+  padding: 15px 0 15px 15px;
 }
 .header-nav {
   margin-right: 15px;
@@ -300,7 +300,7 @@ body {
 .container-content--paragraph {
   margin-bottom: 40px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 22px;
   color: var(--light-brown);
 }
 .container-content--h5 {
@@ -351,20 +351,12 @@ body {
   max-width: 610px;
   margin: 32px 32px 42px;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 23px;
   color: var(--light-brown);
 }
 
 .button--download {
-  background: linear-gradient(
-    0deg,
-    #2aacc8 0%,
-    #2aacc8 0.1%,
-    #60cede 14.9%,
-    #72dae6 50%,
-    #81e4ed 100%
-  );
-  max-width: 240px;
+  min-width: 240px;
   height: 60px;
   border: none;
   margin-right: 40px;
@@ -373,13 +365,24 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 1px solid var(--teal-blue);
+  background: linear-gradient(
+    0deg,
+    #2aacc8 0%,
+    #2aacc8 0.1%,
+    #60cede 14.9%,
+    #72dae6 50%,
+    #81e4ed 100%
+  );
 }
 .secthion-download--txt-button {
   margin-left: 23px;
   color: var(--black-black);
   font-size: 18px;
-  margin-right: 27px;
-  max-width: 240px;
+  margin-right: 33px;
+}
+.button--download--img {
+  margin-left: 19px;
 }
 /* main secthion download */
 
@@ -389,7 +392,6 @@ body {
   justify-content: space-between;
   margin-bottom: 57px;
   flex-wrap: wrap;
-  margin: 0 15px 57px;
 }
 .margin-top-bottom {
   padding: 32px 0 30px;
@@ -429,7 +431,7 @@ body {
 .footer--paragraph {
   margin-top: 10px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
 }
 .footer--h4 {
   font-weight: normal;
@@ -439,6 +441,7 @@ body {
 
 .footer-txt {
   max-width: 691px;
+  margin: 0 15px;
 }
 .footer-flex {
   display: flex;
@@ -447,7 +450,7 @@ body {
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 16px;
-  margin: 0 15px 0;
+  /* margin: 0 15px 0; */
 }
 /* main--foter */
 
@@ -478,4 +481,8 @@ body {
 .container-company--images__margin:hover
   .container-company--images__hover-content {
   display: block;
+}
+
+.button--hover__color:hover {
+  background: var(--teal-blue);
 }
